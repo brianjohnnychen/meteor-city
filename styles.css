@@ -172,8 +172,8 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .console .row .k{color:var(--sky)}
 .console .row .up{color:#5ee3a1}
 .console .row .dn{color:#ff8f8f}
-.arch{margin-top:56px}
-.arch svg{width:100%;height:auto}
+.arch{margin-top:56px;overflow-x:auto}
+.arch svg{width:100%;height:auto;min-width:760px}
 .flowline{stroke-dasharray:6 8;animation:dash 1.4s linear infinite}
 @keyframes dash{to{stroke-dashoffset:-28}}
 @media(prefers-reduced-motion:reduce){.flowline{animation:none}}
@@ -290,5 +290,5 @@ footer.site{padding:56px 0 64px}
 }
 
 /* exploded assembly figure (Elestoria) */
-.exploded{border:1px solid var(--line-strong);background:var(--paper);margin-top:64px}
-.exploded svg{display:block;width:100%;height:auto}
+.exploded{border:1px solid var(--line-strong);background:var(--paper);margin-top:64px;overflow-x:auto}
+.exploded svg{display:block;width:100%;height:auto;min-width:880px}
