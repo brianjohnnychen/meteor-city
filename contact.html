@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Meteor City</title>
+<title>Contact | Meteor City</title>
 <meta name="description" content="Contact Meteor City LLC. Press, wholesale, and general inquiries.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://meteor.city/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Meteor City">
-<meta property="og:title" content="Contact — Meteor City">
+<meta property="og:title" content="Contact | Meteor City">
 <meta property="og:description" content="Contact Meteor City LLC. Press, wholesale, and general inquiries.">
 <meta property="og:url" content="https://meteor.city/contact.html">
 <meta property="og:image" content="https://meteor.city/og-image.png">
@@ -62,7 +62,7 @@
           <div class="drow"><dt>Divisions</dt><dd>Skyros · Elestoria</dd></div>
           <div class="drow"><dt>Response</dt><dd>Inquiries are read; relevant ones are answered.</dd></div>
         </dl>
-        <p class="prose reveal" style="margin-top:32px;font-size:15px">The form assembles an email in your own mail client, addressed and organized — nothing is stored on this site.</p>
+        <p class="prose reveal" style="margin-top:32px;font-size:15px">The form assembles an email in your own mail client, addressed and organized; nothing is stored on this site.</p>
       </div>
 
       <form class="mail-form reveal" id="contact-form" novalidate>
@@ -74,7 +74,7 @@
 
         <label for="cf-topic">Topic</label>
         <select id="cf-topic">
-          <option>Wholesale — Elestoria</option>
+          <option>Wholesale (Elestoria)</option>
           <option>Manufacturer consulting</option>
           <option>Press &amp; media</option>
           <option>Retail channel operations</option>
@@ -113,10 +113,10 @@ document.getElementById('contact-form').addEventListener('submit', function(e){
     alert('Please include your name and a message.');
     return;
   }
-  const subject = `[${topic}] Inquiry from ${name}${org ? ' — ' + org : ''}`;
+  const subject = `[${topic}] Inquiry from ${name}${org ? ' - ' + org : ''}`;
   const body =
 `Name: ${name}
-Organization: ${org || '—'}
+Organization: ${org || '-'}
 Topic: ${topic}
 
 Message:
