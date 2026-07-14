@@ -57,6 +57,8 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .prose{max-width:62ch;color:var(--ink-soft);font-size:17px;line-height:1.75}
 .prose+.prose{margin-top:1.2em}
 .prose strong{color:var(--ink);font-weight:600}
+.prose a{color:var(--sky-text);border-bottom:1px solid rgba(17,115,180,.4)}
+.prose a:hover{border-bottom-color:var(--sky-text)}
 .fig-cap{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);display:flex;gap:8px;align-items:center;margin-top:12px}
 .fig-cap em{font-style:normal;color:var(--sky-text)}
 .more{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line-strong);padding:12px 20px;margin-top:36px;transition:background .2s,border-color .2s}
