@@ -1,4 +1,4 @@
-// Meteor City — shared behavior
+// Meteor City | shared behavior
 const yr = document.getElementById('yr'); if (yr) yr.textContent = new Date().getFullYear();
 
 const mb = document.querySelector('.menu-btn');

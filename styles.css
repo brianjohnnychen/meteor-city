@@ -1,4 +1,4 @@
-/* Meteor City — shared design system
+/* Meteor City | shared design system
    Palette: white #fff · paper #f7fbfe · ink #0a0c10 · sky #69cdff · sky-deep #1f9fe6 */
 :root{
   --white:#ffffff; --paper:#f7fbfe; --ink:#0a0c10; --ink-soft:#4b5563;
@@ -167,7 +167,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 
 /* ---------- Skyros page ---------- */
 .console{border:1px solid rgba(255,255,255,.16);background:#0d1118;font-family:var(--mono);font-size:12.5px;line-height:1.9;padding:22px 26px;height:236px;overflow:hidden;position:relative}
-.console::before{content:"SKYROS / LIVE READOUT — representative stream";position:absolute;top:0;left:0;right:0;padding:8px 26px;font-size:10px;letter-spacing:.16em;color:#8b98a5;background:#0a0d13;border-bottom:1px solid rgba(255,255,255,.1)}
+.console::before{content:"SKYROS / LIVE READOUT · representative stream";position:absolute;top:0;left:0;right:0;padding:8px 26px;font-size:10px;letter-spacing:.16em;color:#8b98a5;background:#0a0d13;border-bottom:1px solid rgba(255,255,255,.1)}
 .console .feed{margin-top:30px}
 .console .row{display:flex;gap:18px;white-space:nowrap;color:#8b98a5}
 .console .row .t{color:#7f8d9b}
