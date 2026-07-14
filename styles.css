@@ -288,3 +288,7 @@ footer.site{padding:56px 0 64px}
   html{scroll-behavior:auto}
   .product:hover{transform:none}
 }
+
+/* exploded assembly figure (Elestoria) */
+.exploded{border:1px solid var(--line-strong);background:var(--paper);margin-top:64px}
+.exploded svg{display:block;width:100%;height:auto}
