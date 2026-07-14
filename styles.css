@@ -202,7 +202,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .process-tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid var(--line-strong);margin-top:56px}
 .process-tri .panel{border-right:1px solid var(--line);padding:0;position:relative;background:var(--white)}
 .process-tri .panel:last-child{border-right:none}
-.process-tri .panel .art{aspect-ratio:4/3;display:block;width:100%;border-bottom:1px solid var(--line)}
+.process-tri .panel .art{aspect-ratio:4/3;display:block;width:100%;border-bottom:1px solid var(--line);object-fit:cover}
 .process-tri .panel .cap{padding:18px 20px 24px}
 .process-tri .panel .cap .ph{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky-text)}
 .process-tri .panel .cap h3{font-family:var(--display);font-variation-settings:'wdth' 112;font-weight:680;font-size:18px;margin:8px 0 6px}
@@ -218,7 +218,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .family-head .count{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
 .product{border:1px solid var(--line);background:var(--white);transition:border-color .2s,transform .2s}
 .product:hover{border-color:var(--sky-deep);transform:translateY(-3px)}
-.product .art{aspect-ratio:4/3;width:100%;display:block;border-bottom:1px solid var(--line);background:linear-gradient(160deg,#fbfdff,#eef5fb)}
+.product .art{aspect-ratio:4/3;width:100%;display:block;border-bottom:1px solid var(--line);background:linear-gradient(160deg,#fbfdff,#eef5fb);object-fit:cover}
 .product .info{padding:16px 18px 20px}
 .product .sku{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--sky-text);text-transform:uppercase}
 .product h4{font-family:var(--display);font-variation-settings:'wdth' 110;font-weight:660;font-size:17px;margin:7px 0 6px}
@@ -291,4 +291,4 @@ footer.site{padding:56px 0 64px}
 
 /* exploded assembly figure (Elestoria) */
 .exploded{border:1px solid var(--line-strong);background:var(--paper);margin-top:64px;overflow-x:auto}
-.exploded svg{display:block;width:100%;height:auto;min-width:880px}
+.exploded svg,.exploded img{display:block;width:100%;height:auto;min-width:880px}
