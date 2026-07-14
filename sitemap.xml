@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://brianjohnnychen.github.io/meteor-city/</loc></url>
-  <url><loc>https://brianjohnnychen.github.io/meteor-city/skyros.html</loc></url>
-  <url><loc>https://brianjohnnychen.github.io/meteor-city/elestoria.html</loc></url>
-  <url><loc>https://brianjohnnychen.github.io/meteor-city/about.html</loc></url>
-  <url><loc>https://brianjohnnychen.github.io/meteor-city/contact.html</loc></url>
+  <url><loc>https://meteor.city/</loc></url>
+  <url><loc>https://meteor.city/skyros.html</loc></url>
+  <url><loc>https://meteor.city/elestoria.html</loc></url>
+  <url><loc>https://meteor.city/about.html</loc></url>
+  <url><loc>https://meteor.city/contact.html</loc></url>
 </urlset>

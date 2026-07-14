@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brianjohnnychen.github.io/meteor-city/sitemap.xml
+Sitemap: https://meteor.city/sitemap.xml
