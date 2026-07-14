@@ -194,10 +194,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 @media(max-width:860px){.method .step{grid-template-columns:1fr;gap:8px}}
 .release{border:1px solid var(--line-strong);padding:44px 48px;margin-top:8px;background:var(--white);position:relative}
 .release::before{content:"CONSULTING";position:absolute;top:-9px;left:32px;background:var(--white);padding:0 10px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--sky-text)}
-.release .status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--sky-deep);background:var(--sky-tint);padding:8px 16px;margin-bottom:22px}
-.release .status i{width:8px;height:8px;border-radius:50%;background:var(--sky-deep);display:inline-block;animation:pulse 2.2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-@media(prefers-reduced-motion:reduce){.release .status i{animation:none}}
 @media(max-width:640px){.release{padding:32px 24px}}
 
 /* ---------- Elestoria page ---------- */
