@@ -154,17 +154,17 @@
       <p class="prose reveal">Modeled outputs land on internal dashboards like these. Every product Meteor City has shipped began as an anomaly on one of them.</p>
       <div class="grid-3 reveal" style="margin-top:52px">
         <div class="chart-card">
-          <h4>Category sales velocity</h4>
+          <h3>Category sales velocity</h3>
           <p class="sub">units / week · trailing 12 weeks</p>
           <canvas id="ch-line" height="200" role="img" aria-label="Representative line chart: one category's weekly sales velocity rising over twelve weeks against a flat incumbent"></canvas>
         </div>
         <div class="chart-card">
-          <h4>Competitive density</h4>
+          <h3>Competitive density</h3>
           <p class="sub">active sellers per category</p>
           <canvas id="ch-bar" height="200" role="img" aria-label="Representative bar chart: active seller counts across five categories, with laptop stands showing a low-density gap"></canvas>
         </div>
         <div class="chart-card">
-          <h4>Keyword demand map</h4>
+          <h3>Keyword demand map</h3>
           <p class="sub">search volume × conversion intent</p>
           <canvas id="ch-bub" height="200" role="img" aria-label="Representative bubble chart: keyword search volume versus purchase intent, with two high-value keywords highlighted"></canvas>
         </div>
@@ -242,7 +242,7 @@
     ctx.setTransform(dpr,0,0,dpr,0,0);
     return {cv,ctx,W,H};
   }
-  const GRID='rgba(255,255,255,0.08)', AX='#66727e', SKY='#69cdff', DEEP='#1f9fe6', GOOD='#5ee3a1';
+  const GRID='rgba(255,255,255,0.08)', AX='#8b98a5', SKY='#69cdff', DEEP='#1f9fe6', GOOD='#5ee3a1';
 
   function grid(c){
     c.ctx.strokeStyle=GRID;c.ctx.lineWidth=1;

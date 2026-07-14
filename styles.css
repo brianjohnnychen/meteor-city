@@ -2,7 +2,7 @@
    Palette: white #fff · paper #f7fbfe · ink #0a0c10 · sky #69cdff · sky-deep #1f9fe6 */
 :root{
   --white:#ffffff; --paper:#f7fbfe; --ink:#0a0c10; --ink-soft:#4b5563;
-  --sky:#69cdff; --sky-deep:#1f9fe6; --sky-text:#147cc0; --sky-tint:#e8f6ff;
+  --sky:#69cdff; --sky-deep:#1f9fe6; --sky-text:#1173b4; --sky-accent:#1590d9; --sky-tint:#e8f6ff;
   --line:rgba(10,12,16,.12); --line-strong:rgba(10,12,16,.85);
   --mono:'IBM Plex Mono',ui-monospace,monospace;
   --body:'Inter',system-ui,sans-serif;
@@ -41,7 +41,7 @@ nav.links a.active{color:var(--ink);border-bottom-color:var(--sky)}
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sky-text);display:flex;align-items:center;gap:12px}
 .eyebrow::before{content:"";width:28px;height:1px;background:var(--sky-deep);display:inline-block}
 h1{font-family:var(--display);font-variation-settings:'wdth' 118;font-weight:750;font-size:clamp(40px,6.4vw,84px);line-height:1.02;letter-spacing:-.015em;margin:24px 0 26px;max-width:15ch}
-h1 .accent{color:var(--sky-deep)}
+h1 .accent{color:var(--sky-accent)}
 .lede{max-width:58ch;font-size:18px;line-height:1.7;color:var(--ink-soft)}
 
 /* ---------- sections ---------- */
@@ -68,7 +68,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .dark h2{color:#fff;border-top-color:rgba(255,255,255,.85)}
 .dark .prose{color:#9aa6b2}
 .dark .prose strong{color:#fff}
-.dark .fig-cap{color:#66727e}
+.dark .fig-cap{color:#8b98a5}
 .dark .fig-cap em{color:var(--sky)}
 .dark .more{color:#fff;border-color:rgba(255,255,255,.6)}
 .dark .more:hover{background:rgba(105,205,255,.12);border-color:var(--sky)}
@@ -125,7 +125,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .signal{padding:26px 24px 30px;border-right:1px solid rgba(255,255,255,.14)}
 .signal:last-child{border-right:none}
 .signal .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
-.signal h4{font-family:var(--display);font-variation-settings:'wdth' 110;font-weight:640;font-size:17px;color:#fff;margin:12px 0 8px}
+.signal h3{font-family:var(--display);font-variation-settings:'wdth' 110;font-weight:640;font-size:17px;color:#fff;margin:12px 0 8px}
 .signal p{font-size:13.5px;line-height:1.6;color:#8b98a5}
 @media(max-width:980px){
   .signal-grid{grid-template-columns:1fr 1fr}
@@ -165,10 +165,10 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 
 /* ---------- Skyros page ---------- */
 .console{border:1px solid rgba(255,255,255,.16);background:#0d1118;font-family:var(--mono);font-size:12.5px;line-height:1.9;padding:22px 26px;height:236px;overflow:hidden;position:relative}
-.console::before{content:"SKYROS / LIVE READOUT — representative stream";position:absolute;top:0;left:0;right:0;padding:8px 26px;font-size:10px;letter-spacing:.16em;color:#66727e;background:#0a0d13;border-bottom:1px solid rgba(255,255,255,.1)}
+.console::before{content:"SKYROS / LIVE READOUT — representative stream";position:absolute;top:0;left:0;right:0;padding:8px 26px;font-size:10px;letter-spacing:.16em;color:#8b98a5;background:#0a0d13;border-bottom:1px solid rgba(255,255,255,.1)}
 .console .feed{margin-top:30px}
 .console .row{display:flex;gap:18px;white-space:nowrap;color:#8b98a5}
-.console .row .t{color:#4a5560}
+.console .row .t{color:#7f8d9b}
 .console .row .k{color:var(--sky)}
 .console .row .up{color:#5ee3a1}
 .console .row .dn{color:#ff8f8f}
@@ -179,10 +179,10 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 @media(prefers-reduced-motion:reduce){.flowline{animation:none}}
 .chart-card{border:1px solid var(--line);background:var(--white);padding:24px 24px 18px}
 .dark .chart-card{border-color:rgba(255,255,255,.14);background:#0d1118}
-.chart-card h4{font-family:var(--display);font-variation-settings:'wdth' 112;font-weight:660;font-size:16px;margin-bottom:4px}
-.dark .chart-card h4{color:#fff}
+.chart-card h3{font-family:var(--display);font-variation-settings:'wdth' 112;font-weight:660;font-size:16px;margin-bottom:4px}
+.dark .chart-card h3{color:#fff}
 .chart-card .sub{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px}
-.dark .chart-card .sub{color:#66727e}
+.dark .chart-card .sub{color:#8b98a5}
 .chart-card canvas{width:100%;height:200px}
 .method{border-top:1px solid var(--line-strong);margin-top:56px}
 .method .step{display:grid;grid-template-columns:180px 1fr 1.1fr;gap:32px;padding:30px 0;border-bottom:1px solid var(--line)}
@@ -227,7 +227,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .clients .client{padding:30px 28px;border-right:1px solid var(--line);background:var(--white)}
 .clients .client:last-child{border-right:none}
 .clients .client .type{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
-.clients .client h4{font-family:var(--display);font-variation-settings:'wdth' 114;font-weight:700;font-size:19px;margin-top:8px}
+.clients .client h3{font-family:var(--display);font-variation-settings:'wdth' 114;font-weight:700;font-size:19px;margin-top:8px}
 .clients .client p{font-size:13px;color:var(--ink-soft);margin-top:6px}
 @media(max-width:760px){.clients{grid-template-columns:1fr}.clients .client{border-right:none;border-bottom:1px solid var(--line)}.clients .client:last-child{border-bottom:none}}
 
@@ -260,7 +260,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .mail-form label:first-of-type{margin-top:0}
 .mail-form input,.mail-form select,.mail-form textarea{width:100%;border:1px solid var(--line);background:var(--white);font-family:var(--body);font-size:15px;padding:12px 14px;color:var(--ink);border-radius:0;appearance:none}
 .mail-form select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%234b5563'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
-.mail-form input:focus,.mail-form select:focus,.mail-form textarea:focus{border-color:var(--sky-deep);outline:none}
+.mail-form input:focus,.mail-form select:focus,.mail-form textarea:focus{border-color:var(--sky-text);outline:none;box-shadow:0 0 0 1px var(--sky-text)}
 .mail-form textarea{min-height:150px;resize:vertical}
 .mail-form button{margin-top:28px;width:100%;border:1px solid var(--line-strong);background:var(--ink);color:#fff;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:16px;cursor:pointer;transition:background .2s}
 .mail-form button:hover{background:var(--sky-deep);border-color:var(--sky-deep)}
