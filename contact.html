@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Meteor City</title>
+<meta name="description" content="Contact Meteor City LLC. Press, wholesale, and general inquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="wordmark"><span class="dot"></span>Meteor City</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="links" id="nav-links" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="skyros.html">Skyros</a>
+      <a href="elestoria.html">Elestoria</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Meteor City · Contact</p>
+      <h1>Reaching <span class="accent">us.</span></h1>
+      <p class="lede">We keep correspondence deliberate. Wholesale, press, and general inquiries are welcome. Please note that Skyros is not accepting new partnership inquiries at this time.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap contact-grid">
+
+      <div>
+        <div class="sec-head" style="grid-template-columns:1fr;margin-bottom:36px">
+          <p class="sec-label">Direct</p>
+        </div>
+        <dl class="direct reveal">
+          <div class="drow"><dt>Email</dt><dd><a href="mailto:brianx@meteor.city">brianx@meteor.city</a></dd></div>
+          <div class="drow"><dt>Entity</dt><dd>Meteor City LLC</dd></div>
+          <div class="drow"><dt>Divisions</dt><dd>Skyros · Elestoria</dd></div>
+          <div class="drow"><dt>Response</dt><dd>Inquiries are read; relevant ones are answered.</dd></div>
+        </dl>
+        <p class="prose reveal" style="margin-top:32px;font-size:15px">The form assembles an email in your own mail client, addressed and organized — nothing is stored on this site.</p>
+      </div>
+
+      <form class="mail-form reveal" id="contact-form" novalidate>
+        <label for="cf-name">Name</label>
+        <input id="cf-name" type="text" autocomplete="name" required>
+
+        <label for="cf-org">Organization <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+        <input id="cf-org" type="text" autocomplete="organization">
+
+        <label for="cf-topic">Topic</label>
+        <select id="cf-topic">
+          <option>Wholesale — Elestoria</option>
+          <option>Press &amp; media</option>
+          <option>Retail channel operations</option>
+          <option>General inquiry</option>
+        </select>
+
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" required placeholder="What would you like to discuss?"></textarea>
+
+        <button type="submit">Compose email to brianx@meteor.city</button>
+        <p class="mail-note">Opens your mail app with the message pre-filled. If nothing opens, email us directly at brianx@meteor.city.</p>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <span class="fm">Meteor City</span>
+    <nav aria-label="Footer"><a href="skyros.html">Skyros</a><a href="elestoria.html">Elestoria</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <span class="meta">© <span id="yr"></span> Meteor City LLC</span>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name  = document.getElementById('cf-name').value.trim();
+  const org   = document.getElementById('cf-org').value.trim();
+  const topic = document.getElementById('cf-topic').value;
+  const msg   = document.getElementById('cf-msg').value.trim();
+  if (!name || !msg){
+    alert('Please include your name and a message.');
+    return;
+  }
+  const subject = `[${topic}] Inquiry from ${name}${org ? ' — ' + org : ''}`;
+  const body =
+`Name: ${name}
+Organization: ${org || '—'}
+Topic: ${topic}
+
+Message:
+${msg}
+
+—
+Sent via meteor.city contact page`;
+  window.location.href = 'mailto:brianx@meteor.city'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body='    + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>

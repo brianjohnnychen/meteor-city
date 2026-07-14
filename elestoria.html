@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elestoria — workspace hardware by Meteor City</title>
+<meta name="description" content="Elestoria is Meteor City's computer and workspace accessory line: laptop stands, USB hubs, and docking stations, sold through Amazon, Walmart, Target, and wholesale programs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .art svg{width:100%;height:100%;display:block}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="wordmark"><span class="dot"></span>Meteor City</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="links" id="nav-links" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="skyros.html">Skyros</a>
+      <a href="elestoria.html" class="active">Elestoria</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Meteor City · Product line</p>
+      <h1>Elestoria<span class="accent">.</span><br>Hardware the data asked for.</h1>
+      <p class="lede">Elestoria is the physical output of the Skyros pipeline — a line of computer and workspace accessories built where the numbers showed a gap. Laptop stands, USB hubs, and docking stations, sold at retail through Amazon, Walmart, and Target, and at wholesale to institutional buyers.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">01 — Design process</p>
+        <h2>From CAD file to production part.</h2>
+      </div>
+      <p class="prose reveal">Every Elestoria product moves through the same three states. It begins as parametric CAD, engineered against the specific shortcomings Skyros found in the incumbent products. It is then printed and lived with — prototypes go onto real desks until the geometry stops being noticed. Only then does it go to production tooling.</p>
+      <div class="process-tri reveal">
+
+        <div class="panel">
+          <svg class="art" viewBox="0 0 400 300" role="img" aria-label="CAD wireframe of the Apex laptop stand with dimension lines">
+            <defs>
+              <pattern id="cadgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" fill="none" stroke="rgba(31,159,230,.12)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="300" fill="#f7fbfe"/>
+            <rect width="400" height="300" fill="url(#cadgrid)"/>
+            <!-- stand geometry: base, arm, deck -->
+            <g fill="none" stroke="#1f9fe6" stroke-width="1.6">
+              <rect x="80" y="228" width="150" height="10" rx="2"/>
+              <rect x="150" y="120" width="120" height="10" rx="2" transform="rotate(-56 150 130)"/>
+              <rect x="118" y="128" width="196" height="12" rx="2" transform="rotate(-11 118 140)"/>
+            </g>
+            <!-- hidden lines -->
+            <g fill="none" stroke="#1f9fe6" stroke-width="1" stroke-dasharray="4 4" opacity=".55">
+              <line x1="155" y1="233" x2="230" y2="150"/>
+              <circle cx="100" cy="233" r="7"/>
+              <circle cx="212" cy="233" r="7"/>
+            </g>
+            <!-- dimensions -->
+            <g stroke="#4b5563" stroke-width="1" fill="#4b5563" font-family="IBM Plex Mono, monospace" font-size="10">
+              <line x1="80" y1="258" x2="230" y2="258"/>
+              <line x1="80" y1="253" x2="80" y2="263"/><line x1="230" y1="253" x2="230" y2="263"/>
+              <text x="132" y="273">228 mm</text>
+              <line x1="330" y1="96" x2="330" y2="238"/>
+              <line x1="325" y1="96" x2="335" y2="96"/><line x1="325" y1="238" x2="335" y2="238"/>
+              <text x="338" y="170">158 mm</text>
+              <text x="90" y="106" fill="#1f9fe6">∠ 11°</text>
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#4b5563">
+              <text x="14" y="22">ELE-LS01 · REV D</text>
+              <text x="14" y="34">AL 6063 · 3.0 mm</text>
+            </g>
+          </svg>
+          <div class="cap">
+            <p class="ph">Phase 1 · CAD</p>
+            <h3>Engineered to the data</h3>
+            <p>Deck angle, depth, and thermal clearance are set by what the reviews of competing stands complained about — not by styling.</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <svg class="art" viewBox="0 0 400 300" role="img" aria-label="3D printed prototype of the Apex laptop stand showing layer lines">
+            <defs>
+              <pattern id="layers" width="6" height="4" patternUnits="userSpaceOnUse">
+                <rect width="6" height="4" fill="#aeb8bf"/>
+                <line x1="0" y1="1" x2="6" y2="1" stroke="rgba(10,12,16,.22)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="300" fill="#eef2f5"/>
+            <!-- print bed -->
+            <rect x="40" y="244" width="320" height="8" fill="#c9d2d8"/>
+            <g stroke="rgba(10,12,16,.12)" stroke-width="1">
+              <line x1="40" y1="248" x2="360" y2="248"/>
+            </g>
+            <!-- brim -->
+            <ellipse cx="165" cy="243" rx="120" ry="6" fill="rgba(10,12,16,.08)"/>
+            <!-- printed part -->
+            <g stroke="rgba(10,12,16,.35)" stroke-width="1">
+              <rect x="80" y="228" width="150" height="10" rx="2" fill="url(#layers)"/>
+              <rect x="150" y="120" width="120" height="10" rx="2" transform="rotate(-56 150 130)" fill="url(#layers)"/>
+              <rect x="118" y="128" width="196" height="12" rx="2" transform="rotate(-11 118 140)" fill="url(#layers)"/>
+            </g>
+            <!-- support stubs -->
+            <g fill="#d5dde2" stroke="rgba(10,12,16,.2)">
+              <rect x="252" y="160" width="6" height="80"/>
+              <rect x="286" y="152" width="6" height="88"/>
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#4b5563">
+              <text x="14" y="22">PROTO-03 · FDM</text>
+              <text x="14" y="34">0.2 mm layers · desk trial wk 2</text>
+            </g>
+            <circle cx="374" cy="20" r="4" fill="#1f9fe6"/>
+          </svg>
+          <div class="cap">
+            <p class="ph">Phase 2 · Prototype</p>
+            <h3>Printed, then lived with</h3>
+            <p>Iterations run on real desks. A prototype passes when nobody thinks about it anymore — the geometry has disappeared into use.</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Finished anodized aluminum Apex laptop stand holding a laptop">
+            <defs>
+              <linearGradient id="alu" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#eef2f6"/><stop offset=".5" stop-color="#cfd8e0"/><stop offset="1" stop-color="#aab6c2"/>
+              </linearGradient>
+              <linearGradient id="lap" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2a3138"/><stop offset="1" stop-color="#11151a"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="300" fill="#fbfdff"/>
+            <ellipse cx="200" cy="252" rx="150" ry="12" fill="rgba(10,12,16,.10)"/>
+            <!-- laptop resting on deck -->
+            <rect x="112" y="104" width="200" height="10" rx="3" transform="rotate(-11 112 116)" fill="url(#lap)"/>
+            <!-- stand -->
+            <g stroke="rgba(10,12,16,.25)" stroke-width=".8">
+              <rect x="80" y="228" width="150" height="10" rx="3" fill="url(#alu)"/>
+              <rect x="150" y="120" width="120" height="10" rx="3" transform="rotate(-56 150 130)" fill="url(#alu)"/>
+              <rect x="118" y="128" width="196" height="12" rx="3" transform="rotate(-11 118 140)" fill="url(#alu)"/>
+            </g>
+            <!-- silicone pads -->
+            <g fill="#69cdff">
+              <rect x="92" y="236" width="18" height="4" rx="2"/>
+              <rect x="200" y="236" width="18" height="4" rx="2"/>
+              <rect x="124" y="120" width="14" height="4" rx="2" transform="rotate(-11 124 126)"/>
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#4b5563">
+              <text x="14" y="22">ELE-LS01 · APEX RISER</text>
+              <text x="14" y="34">anodized AL 6063 · production</text>
+            </g>
+          </svg>
+          <div class="cap">
+            <p class="ph">Phase 3 · Production</p>
+            <h3>Tooling and anodize</h3>
+            <p>Final parts are CNC-formed and anodized aluminum, QC-inspected at the factory and again at the freight forwarder.</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="fig-cap"><em>fig. 07</em> one product, three states — ELE-LS01 shown</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">02 — Catalog</p>
+        <h2>Three families. One standard.</h2>
+      </div>
+      <p class="prose reveal">The catalog is deliberately narrow. Elestoria enters a category only when Skyros shows a durable gap, so each family carries a small number of models that each earn their place. Renders shown are representative; retail availability varies by channel.</p>
+
+      <!-- ================= LAPTOP STANDS ================= -->
+      <div class="family reveal">
+        <div class="family-head"><h3>Laptop stands</h3><span class="count">3 models</span></div>
+        <div class="grid-3">
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Apex Riser fixed-angle aluminum laptop stand">
+              <defs><linearGradient id="a1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset=".5" stop-color="#cfd8e0"/><stop offset="1" stop-color="#a7b3c0"/></linearGradient></defs>
+              <ellipse cx="200" cy="250" rx="140" ry="11" fill="rgba(10,12,16,.09)"/>
+              <g stroke="rgba(10,12,16,.25)" stroke-width=".8">
+                <rect x="90" y="228" width="150" height="10" rx="3" fill="url(#a1)"/>
+                <rect x="160" y="120" width="120" height="10" rx="3" transform="rotate(-56 160 130)" fill="url(#a1)"/>
+                <rect x="128" y="128" width="196" height="12" rx="3" transform="rotate(-11 128 140)" fill="url(#a1)"/>
+              </g>
+              <g fill="#69cdff"><rect x="102" y="236" width="18" height="4" rx="2"/><rect x="210" y="236" width="18" height="4" rx="2"/></g>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-LS01</p>
+              <h4>Apex Riser</h4>
+              <p>Fixed 11° single-piece aluminum riser. Open rear for airflow and cable pass-through; rated to 17″ machines.</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Fold One portable folding laptop stand">
+              <defs><linearGradient id="a2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset="1" stop-color="#a7b3c0"/></linearGradient></defs>
+              <ellipse cx="200" cy="250" rx="135" ry="10" fill="rgba(10,12,16,.09)"/>
+              <g stroke="rgba(10,12,16,.28)" stroke-width=".8">
+                <!-- X legs -->
+                <rect x="120" y="130" width="150" height="9" rx="4" transform="rotate(38 120 130)" fill="url(#a2)"/>
+                <rect x="252" y="130" width="150" height="9" rx="4" transform="rotate(142 252 130)" fill="url(#a2)"/>
+                <!-- top rail with hooks -->
+                <rect x="110" y="122" width="160" height="9" rx="4" fill="url(#a2)"/>
+                <rect x="110" y="112" width="10" height="16" rx="3" fill="url(#a2)"/>
+                <rect x="260" y="112" width="10" height="16" rx="3" fill="url(#a2)"/>
+              </g>
+              <circle cx="192" cy="184" r="5" fill="#69cdff" stroke="rgba(10,12,16,.3)"/>
+              <g fill="#69cdff"><rect x="118" y="244" width="16" height="4" rx="2"/><rect x="250" y="244" width="16" height="4" rx="2"/></g>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-LS02</p>
+              <h4>Fold One</h4>
+              <p>Scissor-fold travel stand, 6 height positions. Collapses flat to 15 mm and weighs under 300 g.</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Duo Dock vertical laptop holder with two slots">
+              <defs><linearGradient id="a3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset="1" stop-color="#a7b3c0"/></linearGradient>
+              <linearGradient id="lp2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3138"/><stop offset="1" stop-color="#11151a"/></linearGradient></defs>
+              <ellipse cx="200" cy="252" rx="120" ry="10" fill="rgba(10,12,16,.09)"/>
+              <!-- laptops standing in slots -->
+              <rect x="150" y="88" width="14" height="150" rx="3" fill="url(#lp2)"/>
+              <rect x="216" y="102" width="10" height="136" rx="3" fill="url(#lp2)"/>
+              <!-- base block with slots -->
+              <g stroke="rgba(10,12,16,.28)" stroke-width=".8">
+                <path d="M110 244 h180 a8 8 0 0 0 8-8 v-30 a8 8 0 0 0 -8-8 h-42 v30 h-24 v-30 h-32 v30 h-24 v-30 h-58 a8 8 0 0 0 -8 8 v30 a8 8 0 0 0 8 8 z" fill="url(#a3)"/>
+              </g>
+              <g fill="#69cdff"><rect x="146" y="222" width="22" height="4" rx="2"/><rect x="212" y="222" width="18" height="4" rx="2"/></g>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-LS03</p>
+              <h4>Duo Dock</h4>
+              <p>Weighted vertical holder with two adjustable slots — a closed laptop and a tablet stand upright, off the desk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= USB HUBS ================= -->
+      <div class="family reveal">
+        <div class="family-head"><h3>USB hubs</h3><span class="count">2 models</span></div>
+        <div class="grid-3">
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Hub Seven compact 7-in-1 USB-C hub with attached cable">
+              <defs><linearGradient id="h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9eef3"/><stop offset="1" stop-color="#9fabb8"/></linearGradient></defs>
+              <ellipse cx="200" cy="216" rx="130" ry="9" fill="rgba(10,12,16,.09)"/>
+              <rect x="90" y="150" width="220" height="52" rx="12" fill="url(#h1)" stroke="rgba(10,12,16,.28)" stroke-width=".8"/>
+              <!-- front ports -->
+              <g fill="#11151a">
+                <rect x="112" y="170" width="26" height="10" rx="2"/>
+                <rect x="148" y="170" width="26" height="10" rx="2"/>
+                <rect x="186" y="171" width="18" height="8" rx="4"/>
+                <path d="M216 170 h30 l-4 10 h-22 z"/>
+                <rect x="258" y="171" width="30" height="8" rx="1"/>
+              </g>
+              <!-- attached cable to USB-C plug -->
+              <path d="M310 176 C 350 176, 356 130, 322 112" fill="none" stroke="#4b5563" stroke-width="5" stroke-linecap="round"/>
+              <rect x="306" y="98" width="26" height="14" rx="6" fill="#4b5563"/>
+              <circle cx="102" cy="158" r="2.5" fill="#69cdff"/>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-HB07</p>
+              <h4>Hub Seven</h4>
+              <p>7-in-1 USB-C: HDMI 4K60, 2× USB-A, USB-C data, SD + microSD, 100 W pass-through. Anodized unibody.</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Hub Ten 10-in-1 USB-C hub with dual rows of ports">
+              <defs><linearGradient id="h2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9eef3"/><stop offset="1" stop-color="#96a3b1"/></linearGradient></defs>
+              <ellipse cx="200" cy="224" rx="140" ry="9" fill="rgba(10,12,16,.09)"/>
+              <rect x="76" y="128" width="248" height="82" rx="14" fill="url(#h2)" stroke="rgba(10,12,16,.28)" stroke-width=".8"/>
+              <g fill="#11151a">
+                <rect x="100" y="148" width="26" height="10" rx="2"/>
+                <rect x="136" y="148" width="26" height="10" rx="2"/>
+                <rect x="172" y="148" width="26" height="10" rx="2"/>
+                <path d="M210 148 h30 l-4 10 h-22 z"/>
+                <path d="M252 148 h30 l-4 10 h-22 z"/>
+                <rect x="100" y="178" width="18" height="8" rx="4"/>
+                <rect x="128" y="178" width="18" height="8" rx="4"/>
+                <rect x="158" y="178" width="30" height="8" rx="1"/>
+                <rect x="198" y="178" width="22" height="8" rx="1"/>
+                <rect x="232" y="177" width="34" height="10" rx="2"/>
+              </g>
+              <circle cx="308" cy="142" r="2.5" fill="#69cdff"/>
+              <text x="90" y="122" font-family="IBM Plex Mono, monospace" font-size="9" fill="#4b5563">2× DISPLAY · GbE</text>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-HB10</p>
+              <h4>Hub Ten</h4>
+              <p>10-in-1 with dual HDMI, gigabit Ethernet, 3× USB-A, USB-C data, card readers, and 100 W charging.</p>
+            </div>
+          </div>
+
+          <div class="product" style="border-style:dashed;background:var(--paper)">
+            <div class="art" style="display:flex;align-items:center;justify-content:center;background:none">
+              <svg viewBox="0 0 120 90" style="width:120px;height:90px" aria-hidden="true">
+                <rect x="10" y="20" width="100" height="50" rx="10" fill="none" stroke="rgba(10,12,16,.3)" stroke-dasharray="5 5"/>
+                <text x="60" y="50" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4b5563">IN PIPELINE</text>
+              </svg>
+            </div>
+            <div class="info">
+              <p class="sku">ELE-HB—</p>
+              <h4>Next in family</h4>
+              <p>A third hub is in the Skyros validation queue. It ships when the data says so — not before.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= DOCKING STATIONS ================= -->
+      <div class="family reveal">
+        <div class="family-head"><h3>Docking stations</h3><span class="count">2 models</span></div>
+        <div class="grid-3">
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Station TB Thunderbolt docking station, horizontal desktop unit">
+              <defs><linearGradient id="d1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a424b"/><stop offset="1" stop-color="#171c22"/></linearGradient></defs>
+              <ellipse cx="200" cy="222" rx="150" ry="10" fill="rgba(10,12,16,.10)"/>
+              <rect x="66" y="132" width="268" height="76" rx="10" fill="url(#d1)" stroke="rgba(10,12,16,.4)" stroke-width=".8"/>
+              <rect x="66" y="132" width="268" height="6" rx="3" fill="#69cdff" opacity=".85"/>
+              <g fill="#0a0c10" stroke="rgba(255,255,255,.25)" stroke-width=".6">
+                <rect x="92" y="160" width="18" height="9" rx="4"/>
+                <rect x="120" y="160" width="18" height="9" rx="4"/>
+                <rect x="150" y="159" width="26" height="11" rx="2"/>
+                <rect x="186" y="159" width="26" height="11" rx="2"/>
+                <rect x="224" y="160" width="30" height="9" rx="1"/>
+                <circle cx="276" cy="164" r="6"/>
+              </g>
+              <circle cx="312" cy="164" r="3" fill="#5ee3a1"/>
+              <text x="92" y="196" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8b98a5">THUNDERBOLT · 96W HOST</text>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-DS01</p>
+              <h4>Station TB</h4>
+              <p>Thunderbolt desktop dock: dual 4K output, 96 W host charging, front-facing data and audio, steel chassis.</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Station U vertical universal USB-C docking station">
+              <defs><linearGradient id="d2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9eef3"/><stop offset="1" stop-color="#9fabb8"/></linearGradient></defs>
+              <ellipse cx="200" cy="248" rx="110" ry="10" fill="rgba(10,12,16,.10)"/>
+              <!-- vertical slab -->
+              <rect x="168" y="64" width="64" height="172" rx="12" fill="url(#d2)" stroke="rgba(10,12,16,.28)" stroke-width=".8"/>
+              <!-- base -->
+              <rect x="140" y="228" width="120" height="14" rx="7" fill="#3a424b" stroke="rgba(10,12,16,.4)" stroke-width=".8"/>
+              <g fill="#11151a">
+                <rect x="184" y="86" width="32" height="8" rx="1"/>
+                <rect x="184" y="104" width="32" height="8" rx="1"/>
+                <rect x="188" y="124" width="24" height="9" rx="2"/>
+                <rect x="188" y="142" width="24" height="9" rx="2"/>
+                <rect x="192" y="162" width="16" height="8" rx="4"/>
+              </g>
+              <circle cx="200" cy="212" r="3" fill="#69cdff"/>
+            </svg>
+            <div class="info">
+              <p class="sku">ELE-DS02</p>
+              <h4>Station U</h4>
+              <p>Universal USB-C tower dock with a weighted base — full port array in a footprint smaller than a coaster.</p>
+            </div>
+          </div>
+
+          <div class="product" style="border-style:dashed;background:var(--paper)">
+            <div class="art" style="display:flex;align-items:center;justify-content:center;background:none">
+              <svg viewBox="0 0 120 90" style="width:120px;height:90px" aria-hidden="true">
+                <rect x="10" y="20" width="100" height="50" rx="10" fill="none" stroke="rgba(10,12,16,.3)" stroke-dasharray="5 5"/>
+                <text x="60" y="50" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4b5563">IN PIPELINE</text>
+              </svg>
+            </div>
+            <div class="info">
+              <p class="sku">ELE-DS—</p>
+              <h4>Next in family</h4>
+              <p>Additional dock configurations are under Skyros review against current keyword and density data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">03 — Channels &amp; customers</p>
+        <h2>On the shelf, and inside institutions.</h2>
+      </div>
+      <div class="grid-2">
+        <div>
+          <p class="prose reveal">Retail units move through Amazon, Walmart, and Target. Wholesale programs supply organizations directly — configured, kitted, and delivered against procurement requirements rather than retail packaging.</p>
+          <p class="prose reveal">We publish our institutional customers because they say more about the product than any copy could.</p>
+        </div>
+        <dl class="fact-table reveal">
+          <div class="fact-row"><dt>Retail</dt><dd><span class="chip">Amazon</span><span class="chip">Walmart</span><span class="chip">Target</span></dd></div>
+          <div class="fact-row"><dt>Wholesale</dt><dd>Direct institutional supply programs</dd></div>
+          <div class="fact-row"><dt>Compliance</dt><dd>US import &amp; product-safety filings handled in-house</dd></div>
+        </dl>
+      </div>
+      <div class="clients reveal">
+        <div class="client">
+          <p class="type">Government / Defense</p>
+          <h4>United States Air Force</h4>
+          <p>Workspace hardware supplied through institutional procurement.</p>
+        </div>
+        <div class="client">
+          <p class="type">Enterprise</p>
+          <h4>Amazon Corporate</h4>
+          <p>Wholesale supply for corporate workplace deployments.</p>
+        </div>
+        <div class="client">
+          <p class="type">Industrial</p>
+          <h4>Crown-Link Corporation</h4>
+          <p>Equipping engineering and trading operations in Taiwan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <span class="fm">Meteor City</span>
+    <nav aria-label="Footer"><a href="skyros.html">Skyros</a><a href="elestoria.html">Elestoria</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <span class="meta">© <span id="yr"></span> Meteor City LLC</span>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

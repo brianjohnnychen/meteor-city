@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skyros — Meteor City's market intelligence platform</title>
+<meta name="description" content="Skyros is Meteor City's data collection, aggregation, and analysis platform. It observes marketplaces continuously and decides which physical products deserve to exist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="wordmark"><span class="dot"></span>Meteor City</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="links" id="nav-links" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="skyros.html" class="active">Skyros</a>
+      <a href="elestoria.html">Elestoria</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero dark" style="padding-bottom:88px">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--sky)">Meteor City · Platform</p>
+      <h1 style="color:#fff">Skyros<span class="accent" style="color:var(--sky)">.</span><br>The market, measured.</h1>
+      <p class="lede" style="color:#9aa6b2">Skyros is our data collection, aggregation, and analysis platform. It watches consumer marketplaces the way a seismograph watches the ground — continuously, quantitatively, and without opinion. Everything Meteor City manufactures was first a pattern in this data.</p>
+      <div class="console reveal" style="margin-top:52px" aria-hidden="true">
+        <div class="feed" id="feed"></div>
+      </div>
+      <p class="fig-cap"><em>fig. 02</em> representative readout — values shown are illustrative</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">01 — Architecture</p>
+        <h2>From raw marketplace noise to a manufacturing decision.</h2>
+      </div>
+      <p class="prose reveal">The platform runs as a pipeline of five systems. Data enters as unstructured marketplace observations and leaves as a single, defensible answer: build, or don't.</p>
+      <div class="arch reveal" role="img" aria-label="Skyros architecture: marketplace sources flow into ingestion, then normalization, warehouse, models, and finally a build decision">
+        <svg viewBox="0 0 1120 300" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Mono, monospace">
+          <!-- sources -->
+          <g font-size="11" fill="#4b5563">
+            <rect x="10" y="30" width="150" height="40" fill="#f7fbfe" stroke="rgba(10,12,16,.3)"/>
+            <text x="24" y="54">MARKETPLACES</text>
+            <rect x="10" y="90" width="150" height="40" fill="#f7fbfe" stroke="rgba(10,12,16,.3)"/>
+            <text x="24" y="114">AD PLACEMENTS</text>
+            <rect x="10" y="150" width="150" height="40" fill="#f7fbfe" stroke="rgba(10,12,16,.3)"/>
+            <text x="24" y="174">SEARCH TERMS</text>
+            <rect x="10" y="210" width="150" height="40" fill="#f7fbfe" stroke="rgba(10,12,16,.3)"/>
+            <text x="24" y="234">REVIEWS</text>
+          </g>
+          <!-- flow lines from sources -->
+          <g stroke="#69cdff" stroke-width="1.5" fill="none">
+            <path class="flowline" d="M160 50 C 220 50, 220 140, 270 140"/>
+            <path class="flowline" d="M160 110 C 215 110, 220 140, 270 140"/>
+            <path class="flowline" d="M160 170 C 215 170, 220 140, 270 140"/>
+            <path class="flowline" d="M160 230 C 220 230, 220 140, 270 140"/>
+          </g>
+          <!-- pipeline blocks -->
+          <g font-size="12">
+            <rect x="270" y="105" width="150" height="70" fill="#ffffff" stroke="rgba(10,12,16,.85)" stroke-width="1.5"/>
+            <text x="292" y="135" fill="#0a0c10" font-weight="500">INGEST</text>
+            <text x="292" y="155" fill="#4b5563" font-size="10">continuous capture</text>
+
+            <rect x="480" y="105" width="150" height="70" fill="#ffffff" stroke="rgba(10,12,16,.85)" stroke-width="1.5"/>
+            <text x="502" y="135" fill="#0a0c10" font-weight="500">NORMALIZE</text>
+            <text x="502" y="155" fill="#4b5563" font-size="10">one product, one record</text>
+
+            <rect x="690" y="105" width="150" height="70" fill="#ffffff" stroke="rgba(10,12,16,.85)" stroke-width="1.5"/>
+            <text x="712" y="135" fill="#0a0c10" font-weight="500">WAREHOUSE</text>
+            <text x="712" y="155" fill="#4b5563" font-size="10">history, not snapshots</text>
+
+            <rect x="900" y="105" width="150" height="70" fill="#e8f6ff" stroke="#1f9fe6" stroke-width="1.5"/>
+            <text x="922" y="135" fill="#0a0c10" font-weight="500">MODEL</text>
+            <text x="922" y="155" fill="#1f9fe6" font-size="10">build / don't build</text>
+          </g>
+          <g stroke="#69cdff" stroke-width="1.5" fill="none">
+            <path class="flowline" d="M420 140 L 480 140"/>
+            <path class="flowline" d="M630 140 L 690 140"/>
+            <path class="flowline" d="M840 140 L 900 140"/>
+          </g>
+        </svg>
+      </div>
+      <p class="fig-cap"><em>fig. 03</em> the Skyros pipeline</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">02 — Collection</p>
+        <h2>How the data is gathered.</h2>
+      </div>
+      <div class="method reveal">
+        <div class="step">
+          <span class="id">C-01</span>
+          <h3>Observe the shelf</h3>
+          <p>Skyros monitors public marketplace listings across the categories we operate in: prices, sales-rank movement, inventory signals, ratings, and review flow. Observation is continuous — a listing is a time series, not a snapshot.</p>
+        </div>
+        <div class="step">
+          <span class="id">C-02</span>
+          <h3>Read the advertising layer</h3>
+          <p>Sponsored placements reveal what listings alone can't: which products a competitor is willing to pay to defend, how aggressively, and against which search terms. Skyros records placement patterns as a proxy for competitor margin and intent.</p>
+        </div>
+        <div class="step">
+          <span class="id">C-03</span>
+          <h3>Map the language of demand</h3>
+          <p>Search-term data shows how customers actually describe what they want — which is rarely how manufacturers describe it. Skyros maintains keyword landscapes per category: volume, seasonality, and the gap between what's searched and what's sold.</p>
+        </div>
+        <div class="step">
+          <span class="id">C-04</span>
+          <h3>Resolve everything to one record</h3>
+          <p>The same physical product appears under different names, bundles, and sellers across channels. An entity-resolution layer collapses these into a single canonical product record, so every downstream number describes the product — not the listing.</p>
+        </div>
+        <div class="step">
+          <span class="id">C-05</span>
+          <h3>Keep the history</h3>
+          <p>Everything lands in a longitudinal warehouse. Category questions are answered against years of history: whether demand is structural or seasonal, whether an incumbent is strengthening or coasting, and how new entrants have fared before.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">03 — Analysis</p>
+        <h2>The signals, rendered.</h2>
+      </div>
+      <p class="prose reveal">Modeled outputs land on internal dashboards like these. Every product Meteor City has shipped began as an anomaly on one of them.</p>
+      <div class="grid-3 reveal" style="margin-top:52px">
+        <div class="chart-card">
+          <h4>Category sales velocity</h4>
+          <p class="sub">units / week · trailing 12 weeks</p>
+          <canvas id="ch-line" height="200"></canvas>
+        </div>
+        <div class="chart-card">
+          <h4>Competitive density</h4>
+          <p class="sub">active sellers per category</p>
+          <canvas id="ch-bar" height="200"></canvas>
+        </div>
+        <div class="chart-card">
+          <h4>Keyword demand map</h4>
+          <p class="sub">search volume × conversion intent</p>
+          <canvas id="ch-bub" height="200"></canvas>
+        </div>
+      </div>
+      <p class="fig-cap"><em>fig. 04–06</em> representative dashboards — values shown are illustrative</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-label">04 — Access</p>
+        <h2>Built for us. Shared with few.</h2>
+      </div>
+      <div class="release reveal">
+        <span class="status"><i></i>Limited commercial release</span>
+        <p class="prose">Skyros was built as Meteor City's internal instrument, and that remains its primary role. The platform is currently in <strong>limited commercial release with a small number of partners we do not name</strong>.</p>
+        <p class="prose"><strong>We are not accepting new partnership inquiries at this time.</strong> Access expands deliberately and by invitation; there is no waitlist, no sales process, and no self-serve tier. When that changes, it will be announced here first.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <span class="fm">Meteor City</span>
+    <nav aria-label="Footer"><a href="skyros.html">Skyros</a><a href="elestoria.html">Elestoria</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <span class="meta">© <span id="yr"></span> Meteor City LLC</span>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script>
+(function(){
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- hero console: scrolling representative readout ---- */
+  const feed = document.getElementById('feed');
+  const cats = ['LAPTOP-STANDS','USB-HUBS','DOCKING','DESK-ORG','MONITOR-ARMS','CABLE-MGMT'];
+  const kws  = ['laptop riser aluminum','usb c hub 4k','docking station dual','vertical laptop holder','ergonomic stand','thunderbolt dock'];
+  function pad(n){return String(n).padStart(2,'0')}
+  function row(){
+    const d = new Date();
+    const t = pad(d.getHours())+':'+pad(d.getMinutes())+':'+pad(d.getSeconds());
+    const r = Math.random();
+    if (r < .34){
+      const v = (Math.random()*8-3).toFixed(1);
+      return `<div class="row"><span class="t">${t}</span><span class="k">${cats[Math.floor(Math.random()*cats.length)]}</span><span>velocity</span><span class="${v>=0?'up':'dn'}">${v>=0?'+':''}${v}%</span><span>wk/wk</span></div>`;
+    } else if (r < .67){
+      const n = 40+Math.floor(Math.random()*260);
+      return `<div class="row"><span class="t">${t}</span><span class="k">${cats[Math.floor(Math.random()*cats.length)]}</span><span>active sellers</span><span>${n}</span><span>Δ ${Math.random()<.5?'<span class="dn">crowding</span>':'<span class="up">thinning</span>'}</span></div>`;
+    }
+    const v = (10+Math.random()*90).toFixed(0);
+    return `<div class="row"><span class="t">${t}</span><span class="k">KW</span><span>"${kws[Math.floor(Math.random()*kws.length)]}"</span><span>${v}k</span><span>searches/mo</span></div>`;
+  }
+  if (feed){
+    for (let i=0;i<9;i++) feed.insertAdjacentHTML('beforeend', row());
+    if (!reduced){
+      setInterval(()=>{
+        feed.insertAdjacentHTML('beforeend', row());
+        while (feed.children.length > 9) feed.removeChild(feed.firstChild);
+      }, 1400);
+    }
+  }
+
+  /* ---- chart helpers (dark cards) ---- */
+  function setup(id){
+    const cv = document.getElementById(id);
+    if (!cv) return null;
+    const dpr = Math.min(window.devicePixelRatio||1,2);
+    const W = cv.clientWidth, H = cv.clientHeight;
+    cv.width = W*dpr; cv.height = H*dpr;
+    const ctx = cv.getContext('2d');
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    return {cv,ctx,W,H};
+  }
+  const GRID='rgba(255,255,255,0.08)', AX='#66727e', SKY='#69cdff', DEEP='#1f9fe6', GOOD='#5ee3a1';
+
+  function grid(c){
+    c.ctx.strokeStyle=GRID;c.ctx.lineWidth=1;
+    for(let i=1;i<5;i++){const y=c.H-24-(c.H-40)*i/5;c.ctx.beginPath();c.ctx.moveTo(30,y);c.ctx.lineTo(c.W-6,y);c.ctx.stroke();}
+    c.ctx.strokeStyle='rgba(255,255,255,0.25)';
+    c.ctx.beginPath();c.ctx.moveTo(30,c.H-24);c.ctx.lineTo(c.W-6,c.H-24);c.ctx.stroke();
+  }
+
+  // line chart: two series, animated draw
+  const lineData = {
+    a:[42,45,44,49,55,54,61,66,64,72,79,84],   // opportunity category
+    b:[58,57,59,56,58,55,56,54,55,53,54,52]    // saturated incumbent
+  };
+  function drawLine(prog){
+    const c = setup('ch-line'); if(!c) return;
+    grid(c);
+    const n = lineData.a.length, x0=30, x1=c.W-10, ymax=100;
+    const X=i=>x0+(x1-x0)*i/(n-1), Y=v=>c.H-24-(c.H-44)*v/ymax;
+    [['b',AX,1.4],['a',SKY,2]].forEach(([key,col,w])=>{
+      const d=lineData[key], upto=Math.max(2,Math.ceil(n*prog));
+      c.ctx.strokeStyle=col;c.ctx.lineWidth=w;c.ctx.beginPath();
+      for(let i=0;i<upto;i++){const px=X(i),py=Y(d[i]);i?c.ctx.lineTo(px,py):c.ctx.moveTo(px,py);}
+      c.ctx.stroke();
+      if(key==='a'&&prog>=1){
+        const px=X(n-1),py=Y(d[n-1]);
+        c.ctx.fillStyle=SKY;c.ctx.beginPath();c.ctx.arc(px,py,3.5,0,Math.PI*2);c.ctx.fill();
+        c.ctx.fillStyle=SKY;c.ctx.font='10px "IBM Plex Mono",monospace';
+        c.ctx.fillText('signal',px-34,py-10);
+      }
+    });
+    c.ctx.fillStyle=AX;c.ctx.font='10px "IBM Plex Mono",monospace';
+    c.ctx.fillText('W1',30,c.H-8);c.ctx.fillText('W12',c.W-32,c.H-8);
+  }
+
+  // bar chart: density with one thin (opportunity) bar highlighted
+  const bars=[{l:'HUBS',v:88},{l:'DOCKS',v:74},{l:'STANDS',v:31,hl:true},{l:'ARMS',v:66},{l:'ORG',v:58}];
+  function drawBar(prog){
+    const c=setup('ch-bar');if(!c)return;
+    grid(c);
+    const bw=(c.W-60)/bars.length;
+    bars.forEach((b,i)=>{
+      const h=(c.H-50)*(b.v/100)*prog;
+      const x=36+i*bw, y=c.H-24-h;
+      c.ctx.fillStyle=b.hl?SKY:'rgba(255,255,255,0.22)';
+      c.ctx.fillRect(x,y,bw-16,h);
+      c.ctx.fillStyle=b.hl?SKY:AX;c.ctx.font='9.5px "IBM Plex Mono",monospace';
+      c.ctx.fillText(b.l,x,c.H-8);
+      if(b.hl&&prog>=1){c.ctx.fillText('gap',x+2,y-8);}
+    });
+  }
+
+  // bubble chart: keyword demand map
+  const bubs=Array.from({length:16},(_,i)=>({
+    x:.1+Math.random()*.8, y:.15+Math.random()*.7,
+    r:4+Math.random()*13, hl:i===3||i===9
+  }));
+  function drawBub(prog){
+    const c=setup('ch-bub');if(!c)return;
+    grid(c);
+    bubs.forEach(b=>{
+      const px=30+(c.W-46)*b.x, py=16+(c.H-56)*b.y, pr=b.r*prog;
+      c.ctx.beginPath();c.ctx.arc(px,py,pr,0,Math.PI*2);
+      if(b.hl){c.ctx.fillStyle='rgba(105,205,255,0.35)';c.ctx.fill();c.ctx.strokeStyle=SKY;c.ctx.lineWidth=1.4;c.ctx.stroke();}
+      else{c.ctx.fillStyle='rgba(255,255,255,0.10)';c.ctx.fill();c.ctx.strokeStyle='rgba(255,255,255,0.28)';c.ctx.lineWidth=1;c.ctx.stroke();}
+    });
+    c.ctx.fillStyle=AX;c.ctx.font='10px "IBM Plex Mono",monospace';
+    c.ctx.fillText('volume →',c.W-70,c.H-8);
+    c.ctx.save();c.ctx.translate(12,c.H-30);c.ctx.rotate(-Math.PI/2);c.ctx.fillText('intent →',0,0);c.ctx.restore();
+  }
+
+  function animate(fn,dur,done){
+    if(reduced){fn(1);return;}
+    const t0=performance.now();
+    (function f(t){const p=Math.min(1,(t-t0)/dur);fn(1-Math.pow(1-p,3));if(p<1)requestAnimationFrame(f);else if(done)done();})(t0);
+  }
+  // each chart replays on a cycle while visible, so it's never missed
+  const charts=[
+    {id:'ch-line',fn:drawLine,dur:1400},
+    {id:'ch-bar', fn:drawBar, dur:1000},
+    {id:'ch-bub', fn:drawBub, dur:1100}
+  ];
+  const HOLD=3200; // ms to rest at the finished frame before replaying
+  charts.forEach(c=>{c.vis=false;c.busy=false;});
+  function cycle(c){
+    if(!c.vis||c.busy||reduced)return;
+    c.busy=true;
+    animate(c.fn,c.dur,()=>{ setTimeout(()=>{c.busy=false;cycle(c);},HOLD); });
+  }
+  const chartIO=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      const c=charts.find(x=>x.id===e.target.id); if(!c)return;
+      c.vis=e.isIntersecting;
+      if(c.vis){ if(reduced){c.fn(1);} else cycle(c); }
+    });
+  },{threshold:.3});
+  charts.forEach(c=>{const el=document.getElementById(c.id);if(el)chartIO.observe(el)});
+  window.addEventListener('resize',()=>{drawLine(1);drawBar(1);drawBub(1);});
+})();
+</script>
+</body>
+</html>
