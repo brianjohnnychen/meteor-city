@@ -274,3 +274,9 @@ footer.site{padding:56px 0 64px}
 /* exploded assembly figure (Elestoria) */
 .exploded{border:1px solid var(--line-strong);background:var(--paper);margin-top:64px;overflow-x:auto}
 .exploded svg,.exploded img{display:block;width:100%;height:auto;min-width:880px}
+
+.story-grid{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start;max-width:960px}
+.portrait{margin:0}
+.portrait img{display:block;width:100%;height:auto;border:1px solid var(--line-strong)}
+.portrait figcaption{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+@media(max-width:760px){.story-grid{grid-template-columns:1fr;gap:32px}.portrait{max-width:340px}}
