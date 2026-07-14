@@ -1,5 +1,4 @@
 // Meteor City — shared behavior
-document.querySelectorAll('#yr').forEach(e => e.textContent = new Date().getFullYear());
 const yr = document.getElementById('yr'); if (yr) yr.textContent = new Date().getFullYear();
 
 const mb = document.querySelector('.menu-btn');

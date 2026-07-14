@@ -8,6 +8,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://brianjohnnychen.github.io/meteor-city/skyros.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meteor City">
+<meta property="og:title" content="Skyros — Meteor City's market intelligence platform">
+<meta property="og:description" content="Skyros is Meteor City's data collection, aggregation, and analysis platform. It observes marketplaces continuously and decides which physical products deserve to exist.">
+<meta property="og:url" content="https://brianjohnnychen.github.io/meteor-city/skyros.html">
+<meta property="og:image" content="https://brianjohnnychen.github.io/meteor-city/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -143,17 +156,17 @@
         <div class="chart-card">
           <h4>Category sales velocity</h4>
           <p class="sub">units / week · trailing 12 weeks</p>
-          <canvas id="ch-line" height="200"></canvas>
+          <canvas id="ch-line" height="200" role="img" aria-label="Representative line chart: one category's weekly sales velocity rising over twelve weeks against a flat incumbent"></canvas>
         </div>
         <div class="chart-card">
           <h4>Competitive density</h4>
           <p class="sub">active sellers per category</p>
-          <canvas id="ch-bar" height="200"></canvas>
+          <canvas id="ch-bar" height="200" role="img" aria-label="Representative bar chart: active seller counts across five categories, with laptop stands showing a low-density gap"></canvas>
         </div>
         <div class="chart-card">
           <h4>Keyword demand map</h4>
           <p class="sub">search volume × conversion intent</p>
-          <canvas id="ch-bub" height="200"></canvas>
+          <canvas id="ch-bub" height="200" role="img" aria-label="Representative bubble chart: keyword search volume versus purchase intent, with two high-value keywords highlighted"></canvas>
         </div>
       </div>
       <p class="fig-cap"><em>fig. 04–06</em> representative dashboards — values shown are illustrative</p>

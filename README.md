@@ -18,3 +18,10 @@ Served from the `main` branch, root directory. Any push to `main` redeploys auto
    - `CNAME` `www` → `<username>.github.io`
    - Proxy status: DNS only until the GitHub certificate is issued, then optional proxy
 3. GitHub Pages → Enforce HTTPS once the certificate shows ready
+
+## Custom-domain cutover checklist
+When meteor.city goes live, update in one commit:
+- `404.html` — change all `/meteor-city/` paths to `/`
+- All 5 pages — canonical + `og:url` + `og:image` URLs → `https://meteor.city/...`
+- `sitemap.xml` and `robots.txt` — swap base URL
+- Add `CNAME` file containing `meteor.city`
