@@ -27,5 +27,4 @@ When meteor.city goes live, update in one commit:
 - Add `CNAME` file containing `meteor.city`
 
 ## Skyros product URL
-Currently `https://skyros.lovable.app`, referenced in exactly one place: skyros.html, section "05 · For sellers" link.
-TODO: swap to `https://skyros.ai` on domain cutover (update that href and redeploy).
+Permanent: `https://skyros.ai`, referenced in exactly one place: skyros.html, section "05 · For sellers" link. (Staging-URL cutover completed.)
