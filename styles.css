@@ -91,7 +91,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .stage h3{font-family:var(--display);font-variation-settings:'wdth' 112;font-weight:680;font-size:19px;margin:14px 0 10px}
 .stage p{font-size:13.5px;line-height:1.6;color:var(--ink-soft)}
 .stage::after{content:"→";position:absolute;top:26px;right:14px;font-family:var(--mono);font-size:13px;color:rgba(10,12,16,.28)}
-.stage:last-child::after{content:"●";color:#1f9fe6;font-size:10px;top:29px}
+.stage:last-child::after{content:"●";color:#1590d9;font-size:10px;top:29px}
 @media(max-width:980px){
   .pipeline{grid-template-columns:1fr;border-left:none;border-top:none}
   .stage{border-right:none;border-top:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:0 8px;padding:22px 4px}
@@ -156,7 +156,7 @@ h3.block{font-family:var(--display);font-variation-settings:'wdth' 112;font-weig
 .route .node small{color:var(--ink-soft)}
 .route .link{flex:1;min-width:40px;height:1px;background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 12px);position:relative}
 .route .link::after{content:"";position:absolute;right:-1px;top:-3.5px;border-left:7px solid var(--ink);border-top:4px solid transparent;border-bottom:4px solid transparent}
-.route .markets{border:1px solid #1f9fe6;background:var(--sky-tint);padding:14px 22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.route .markets{border:1px solid #1590d9;background:var(--sky-tint);padding:14px 22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
 .route .markets small{color:var(--sky-text)}
 @media(max-width:700px){
   .route{flex-direction:column;align-items:stretch}

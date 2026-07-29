@@ -94,9 +94,9 @@
             <text x="712" y="135" fill="#0a0c10" font-weight="500">WAREHOUSE</text>
             <text x="712" y="155" fill="#4b5563" font-size="10">history, not snapshots</text>
 
-            <rect x="900" y="105" width="150" height="70" fill="#e8f6ff" stroke="#1f9fe6" stroke-width="1.5"/>
+            <rect x="900" y="105" width="150" height="70" fill="#e8f6ff" stroke="#1590d9" stroke-width="1.5"/>
             <text x="922" y="135" fill="#0a0c10" font-weight="500">MODEL</text>
-            <text x="922" y="155" fill="#1f9fe6" font-size="10">build / don’t build</text>
+            <text x="922" y="155" fill="#1590d9" font-size="10">build / don’t build</text>
           </g>
           <g stroke="#69cdff" stroke-width="1.5" fill="none">
             <path class="flowline" d="M420 140 L 480 140"/>
@@ -190,12 +190,24 @@
     <div class="wrap">
       <div class="sec-head">
         <p class="sec-label">05 · For sellers</p>
+        <!-- Skyros instrument mark: reticle = the instrument; ascending trail in night navy; the bright point = the signal. Ink/navy/sky values match this site's palette. -->
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Skyros mark">
+  <circle cx="16" cy="16" r="12.5" stroke="#0a0c10" stroke-width="1.6"/>
+  <line x1="16" y1="1.5" x2="16" y2="6" stroke="#0a0c10" stroke-width="1.4"/>
+  <line x1="16" y1="26" x2="16" y2="30.5" stroke="#0a0c10" stroke-width="1.4"/>
+  <line x1="1.5" y1="16" x2="6" y2="16" stroke="#0a0c10" stroke-width="1.4"/>
+  <line x1="26" y1="16" x2="30.5" y2="16" stroke="#0a0c10" stroke-width="1.4"/>
+  <line x1="10" y1="22" x2="14.5" y2="17.5" stroke="#12294f" stroke-width="2.2" stroke-linecap="round" opacity="0.35"/>
+  <line x1="14.5" y1="17.5" x2="19.5" y2="12.5" stroke="#12294f" stroke-width="2.2" stroke-linecap="round" opacity="0.75"/>
+  <circle cx="25" cy="7" r="3.4" fill="#69cdff"/>
+</svg>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#5a6470;margin:8px 0 18px">fig. · the Skyros instrument mark</p>
         <h2>Skyros, productized.</h2>
       </div>
       <div class="release reveal">
         <p class="prose">In 2026 we productized the advertising-analysis layer of Skyros into a public subscription product for Amazon sellers. It reads Amazon Search Term Reports to locate wasted ad spend, surface the keywords that earn their bids, and generate ready-to-upload bulk fix files: the same discipline we apply to our own listings, offered as software.</p>
         <p class="prose">The subscription covers the advertising layer only; the collection, resolution, and warehouse machinery described above stays internal. Alongside the software, our team offers hands-on Amazon advertising services: account audits, ongoing campaign management, and brand promotion strategy.</p>
-        <a class="more" href="https://skyros.ai" rel="noopener">Skyros for sellers</a>
+        <a class="more" href="https://skyros.ai" target="_blank" rel="noopener">Skyros for sellers</a>
       </div>
     </div>
   </section>
@@ -283,7 +295,7 @@
     ctx.setTransform(dpr,0,0,dpr,0,0);
     return {cv,ctx,W,H};
   }
-  const GRID='rgba(255,255,255,0.08)', AX='#8b98a5', SKY='#69cdff', DEEP='#1f9fe6', GOOD='#5ee3a1';
+  const GRID='rgba(255,255,255,0.08)', AX='#8b98a5', SKY='#69cdff', DEEP='#1590d9', GOOD='#5ee3a1';
 
   function grid(c){
     c.ctx.strokeStyle=GRID;c.ctx.lineWidth=1;
