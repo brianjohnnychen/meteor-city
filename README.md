@@ -25,3 +25,7 @@ When meteor.city goes live, update in one commit:
 - All 5 pages — canonical + `og:url` + `og:image` URLs → `https://meteor.city/...`
 - `sitemap.xml` and `robots.txt` — swap base URL
 - Add `CNAME` file containing `meteor.city`
+
+## Skyros product URL
+Currently `https://skyros.lovable.app`, referenced in exactly one place: skyros.html, section "05 · For sellers" link.
+TODO: swap to `https://skyros.ai` on domain cutover (update that href and redeploy).
