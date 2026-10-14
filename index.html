@@ -270,5 +270,7 @@
     }
   })();
 </script>
+<!-- Sentinel canary: hidden link a human never follows and a link-harvesting scraper does; a hit is logged and alerted by the hub. Not an <img>, so browsers never auto-load it. Static so non-JS scrapers trip it too. -->
+<a href="https://meteor-admin.pages.dev/c?p=meteor.city" aria-hidden="true" tabindex="-1" rel="nofollow noopener" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">&middot;</a>
 </body>
 </html>
